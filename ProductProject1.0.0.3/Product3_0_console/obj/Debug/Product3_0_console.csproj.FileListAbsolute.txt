@@ -1,0 +1,11 @@
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\bin\Debug\Product3_0_console.exe.config
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\bin\Debug\Product3_0_console.exe
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\bin\Debug\Product3_0_console.pdb
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\bin\Debug\Product3_0_dll.dll
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\bin\Debug\Product3_0_dll.pdb
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\obj\Debug\Product3_0_console.csproj.AssemblyReference.cache
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\obj\Debug\Product3_0_console.csproj.SuggestedBindingRedirects.cache
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\obj\Debug\Product3_0_console.csproj.CoreCompileInputs.cache
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\obj\Debug\Product3_0_console.csproj.CopyComplete
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\obj\Debug\Product3_0_console.exe
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_console\obj\Debug\Product3_0_console.pdb
