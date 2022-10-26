@@ -1,0 +1,6 @@
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_dll\bin\Debug\Product3_0_dll.dll
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_dll\bin\Debug\Product3_0_dll.pdb
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_dll\obj\Debug\Product3_0_dll.csproj.AssemblyReference.cache
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_dll\obj\Debug\Product3_0_dll.csproj.CoreCompileInputs.cache
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_dll\obj\Debug\Product3_0_dll.dll
+C:\Users\GGurkhude\Downloads\Projects .net\Product3_0_dll\obj\Debug\Product3_0_dll.pdb
