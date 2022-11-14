@@ -1,0 +1,69 @@
+﻿@model ProductVM;
+@{
+    ViewData["Title"] = "Add";
+}
+
+<div style="text-align:center;align-items:center">
+
+<h1>Add product</h1>
+    <div style="align-items:center;text-align:center">
+    <form method="post" style="align-items:center;text-align:center">
+            <table width="40%" align="center" cellpadding="10" style="align-items:center;text-align:center">
+
+            <tr>
+                <th>
+                    name
+                </th>
+                <td>
+                    <input asp-for="ProductName" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    mfgDate
+                </th>
+                <td>
+                    <input asp-for="purchaseDate" type="date" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Stock
+                </th>
+                <td>
+                    <input asp-for="quantity" type="numv
+" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Price
+                </th>
+                <td>
+                    <input asp-for="price" type="number" />
+                </td>
+            </tr>
+            <tr>
+                
+                <th>Category</th>
+                <td>
+                    <select asp-for="CategoryId"
+                            asp-items="@(new SelectList(Model.Category,"Id","Name"))">
+                    </select>
+                </td>
+                <td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" id="btn1" name="btn1" value="Add Product" />
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</div>
+
+
+</div>

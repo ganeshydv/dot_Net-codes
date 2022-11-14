@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body style="text-align:center">
+    <h1>PRODUCT HOME</h1>
+    <table width="40%" align="center" cellpadding="10">
+        <tr>
+            <td>
+                <a asp-controller="home" asp-action="index">
+                    Home
+                </a>
+            </td>
+            <td>
+                <a asp-controller="alldata" asp-action="add">
+                    Add
+                </a> 
+             </td>
+
+            <td>
+                <a 
+                 asp-controller="alldata" asp-action="index">Search/Update
+                </a> 
+            </td>
+
+        </tr>
+
+    </table>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

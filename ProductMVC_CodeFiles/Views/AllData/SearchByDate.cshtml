@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ProductDAL.EntityLayer.Product> ;
+@{
+    ViewData["Title"] = "SearchByName";
+}
+
+<table width="40%" align="center" cellpadding="5" border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Mfg Date</th>
+        <th>Expiry Date</th>
+        <th>Stock</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var item in @Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.MfgDate</td>
+            <td>@item.ExpiryDate</td>
+            <td>@item.Stock</td>
+            <td>@item.Price</td>
+            <td>@item.Category.Name</td>
+            <td>
+                <a asp-controller="alldata" asp-action="update" asp-route-id="@item.Id"  >
+                    Update
+                </a>
+            </td>
+            <td>
+                <a asp-controller="alldata" asp-action="delete" asp-route-id="@item.Id" >Delete</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+

@@ -1,0 +1,77 @@
+﻿@model IEnumerable<ProductDAL.EntityLayer.Product> ;
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div style="text-align:center;">
+
+
+
+<h1>Product</h1>
+<div>
+    <form  action="" method="post" >
+            <table width="40%" align="center" cellpadding="10" style="align-items:center;text-align:center">
+            <tr>
+                <td>
+                    <input type="text" id="searchTxt"  name="searchTxt">
+                </td>
+                <td><button type="submit">search</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+    <div>
+        <form action="./searchbydate" method="post">
+            <table width="40%" align="center" cellpadding="10" style="align-items:center;text-align:center">
+                <tr>
+                    <td>
+                        <input asp-route-id="" type="date" id="" name="dateSearch">
+                    </td>
+                    <td><button type="submit">search</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+<table width="40%" align="center" cellpadding="5" border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Mfg Date</th>
+        <th>Expiry Date</th>
+        <th>Stock</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var item in @Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.MfgDate</td>
+            <td>@item.ExpiryDate</td>
+            <td>@item.Stock</td>
+            <td>@item.Price</td>
+            <td>@item.Category.Name</td>
+            <td>
+                <a asp-controller="alldata" asp-action="update" asp-route-id="@item.Id" >
+                    Update
+                </a>
+             </td>
+             <td>
+                 <a asp-controller="alldata" asp-action="delete" asp-route-id="@item.Id" >Delete</a>
+             </td>
+        </tr>
+    }
+
+</table>
+
+</div>
+<script>
+     function delete( var s){
+        alert("want to delete...")
+    }
+</script>
