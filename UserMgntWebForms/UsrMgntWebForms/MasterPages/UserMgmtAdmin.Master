@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMgmtAdmin.master.cs" Inherits="UserMgmtWebForms.MasterPages.UserMgmtAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+           <h1 class="mainHeading">User management App</h1>
+        </div>
+        <div id="left">
+           
+            <asp:Panel ID="Panel1" runat="server">
+                <asp:BulletedList ID="BulletedList1" runat="server" DisplayMode="HyperLink">
+                    <asp:ListItem Value="~/admin/searchdisplay.aspx">Manage Users</asp:ListItem>
+                    <asp:ListItem Value="url">Manage Products</asp:ListItem>
+                    <asp:ListItem Value="url">Manage Orders</asp:ListItem>
+                </asp:BulletedList>
+            </asp:Panel>
+           
+        </div>
+        <div id="right">
+           <asp:ContentPlaceHolder ID="main" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
